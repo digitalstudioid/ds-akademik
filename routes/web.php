@@ -19,3 +19,7 @@ Route::get('/', function () {
 Route::get('apakabar', function() {
 	return 'Hallo.. apa kabar?';
 });
+
+Route::get('apakabar/{nama}', function($nama) {
+	return 'Hallo.. apa kabar ' . $nama . '?';
+});
